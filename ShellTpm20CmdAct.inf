@@ -1,0 +1,49 @@
+## @file
+#
+#  Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+#  All rights reserved.
+#  The License file locate on:
+#  https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = ShellTpm20CmdAct
+  FILE_GUID                      = D5C7A518-BA07-42b1-AE41-DC62BD4F9E99
+  MODULE_TYPE                    = UEFI_APPLICATION
+  PI_SPECIFICATION_VERSION       = 0x0001000A
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellTpm20CmdActEntryPoint
+
+[Sources]
+    ShellTpm20CmdAct.h  
+    ShellTpm20CmdAct.c
+    AuxFunc.c
+    AuxFunc.h
+    ShellEnv.h
+    ShellApAuxFuncLib.c
+    ShellApAuxFuncLib1.c
+    ShellApAuxLib.c
+    Tpm20CommLib/Tpm2GetCapability.c
+    Tpm20CommLib/Tpm2Capability.h
+    Tpm20CommLib/Tpm2SubmitCommand.c
+    Tpm20CommLib/Tpm2SubmitCommand.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiLib
+    BaseMemoryLib
+    MemoryAllocationLib
+    BaseLib
+    PrintLib
+    UefiApplicationEntryPoint
+
+[Protocols]
+
+[Depex]
+
+[BuildOptions.X64]
+  

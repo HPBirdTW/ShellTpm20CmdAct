@@ -1,0 +1,14 @@
+## @file
+#
+#  Copyright (C) 2019 HPBirdChen (hpbirdtw@gmail.com)
+#  All rights reserved.
+#  The License file locate on:
+#  https://github.com/HPBirdTW/ShellTpmDmpLog/license.txt
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = TCG2ShellTpm20CmdAct
+  PACKAGE_GUID                   = 9EACEBEF-92C5-4b88-A738-5E7CBE0791D4
+  PACKAGE_VERSION                = 0.4
